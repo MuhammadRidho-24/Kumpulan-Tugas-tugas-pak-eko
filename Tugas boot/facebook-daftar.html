@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Facebook | Facebook</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .facebook-header {
+            background-color: #1877f2;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .facebook-logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .registration-container {
+            max-width: 432px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .registration-form {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .form-title {
+            font-size: 25px;
+            font-weight: bold;
+            color: #1c1e21;
+            margin-bottom: 5px;
+        }
+        
+        .form-subtitle {
+            color: #606770;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+        }
+        
+        .form-control:focus {
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+        
+        .birthday-select {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .birthday-select select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #dddfe2;
+            border-radius: 4px;
+        }
+        
+        .gender-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .gender-option {
+            flex: 1;
+            border: 1px solid #dddfe2;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .gender-option input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        .signup-btn {
+            background-color: #00a400;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .signup-btn:hover {
+            background-color: #008a00;
+        }
+        
+        .terms-text {
+            font-size: 11px;
+            color: #777;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+        
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Facebook Header -->
+    <div class="facebook-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="facebook-logo">facebook</a>
+            <div>
+                <a href="tugas.html" class="btn btn-light btn-sm">Masuk</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="registration-container">
+        <div class="registration-form">
+            <h1 class="form-title">Buat Akun Baru</h1>
+            <p class="form-subtitle">Cepat dan mudah.</p>
+            
+            <form id="registrationForm">
+                <!-- Name Fields -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nama depan" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nama belakang" required>
+                    </div>
+                </div>
+                
+                <!-- Email/Phone -->
+                <input type="email" class="form-control" placeholder="Nomor seluler atau email" required>
+                
+                <!-- Password -->
+                <input type="password" class="form-control" placeholder="Kata sandi baru" required>
+                
+                <!-- Date of Birth -->
+                <label class="form-label mt-3">Tanggal Lahir</label>
+                <div class="birthday-select">
+                    <select class="form-select" required>
+                        <option value="">Hari</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    
+                    <select class="form-select" required>
+                        <option value="">Bulan</option>
+                        <option value="1">Januari</option>
+                        <option value="2">Februari</option>
+                        <option value="3">Maret</option>
+                        <option value="4">April</option>
+                        <option value="5">Mei</option>
+                        <option value="6">Juni</option>
+                        <option value="7">Juli</option>
+                        <option value="8">Agustus</option>
+                        <option value="9">September</option>
+                        <option value="10">Oktober</option>
+                        <option value="11">November</option>
+                        <option value="12">Desember</option>
+                    </select>
+                    
+                    <select class="form-select" required>
+                        <option value="">Tahun</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                    </select>
+                </div>
+                
+                <!-- Gender -->
+                <label class="form-label mt-3">Jenis Kelamin</label>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <input type="radio" name="gender" value="female" id="female" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" value="male" id="male" required>
+                        <label for="male">Laki-laki</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" value="custom" id="custom" required>
+                        <label for="custom">Kustom</label>
+                    </div>
+                </div>
+                
+                <!-- Terms and Conditions -->
+                <p class="terms-text">
+                    Dengan mengklik Daftar, Anda menyetujui <a href="#">Ketentuan</a>, <a href="#">Kebijakan Privasi</a>, dan <a href="#">Kebijakan Cookie</a> kami. Anda akan menerima Notifikasi SMS dari kami dan bisa berhenti kapan saja.
+                </p>
+                
+                <!-- Sign Up Button -->
+                <button type="submit" class="signup-btn">Daftar</button>
+                
+                <!-- Login Link -->
+                <div class="login-link">
+                    <a href="tugas.html">Sudah punya akun?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assest/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pendaftaran berhasil! (Ini adalah demo)');
+        });
+    </script>
+</body>
+</html>
